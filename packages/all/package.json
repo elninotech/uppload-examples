@@ -1,0 +1,8 @@
+{
+  "name": "@uppload/all",
+  "version": "0.0.0",
+  "repository": "https://github.com/elninotech/uppload-examples",
+  "homepage": "https://uppload.js.org/examples",
+  "author": "El Niño <https://elnino.tech>",
+  "license": "MIT"
+}
