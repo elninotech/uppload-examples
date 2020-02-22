@@ -13,6 +13,11 @@ importers:
       parcel: beta
       typescript: latest
       uppload: latest
+  scripts:
+    devDependencies:
+      marked: 0.8.0
+    specifiers:
+      marked: latest
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.8.3:

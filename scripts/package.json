@@ -1,0 +1,9 @@
+{
+  "name": "@uppload/examples",
+  "version": "1.0.0",
+  "author": "El Niño (https://www.elnino.tech)",
+  "license": "MIT",
+  "devDependencies": {
+    "marked": "latest"
+  }
+}
