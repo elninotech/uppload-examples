@@ -1,7 +1,7 @@
 importers:
   examples/meta:
     dependencies:
-      uppload: 2.4.0
+      uppload: 2.5.0
     devDependencies:
       cssnano: 4.1.10
       marked: 0.8.0
@@ -9,7 +9,7 @@ importers:
       typescript: 3.8.2
     specifiers:
       cssnano: latest
-      marked: ^0.8.0
+      marked: latest
       parcel: beta
       typescript: latest
       uppload: latest
@@ -2024,10 +2024,6 @@ packages:
       node: '>= 0.4'
     resolution:
       integrity: sha512-QCOllgZJtaUo9miYBcLChTUaHNjJF3PYs1VidD7AwiEj1kYxKeQTctLAezAOH5ZKRH0g2IgPn6KwB4IT8iRpvA==
-  /es6-promise/4.2.8:
-    dev: false
-    resolution:
-      integrity: sha512-HJDGx5daxeIvxdBxvG2cb9g4tEvwIk3i8+nhX0yGrYmZUzbkdg8QbDevheDB8gd0//uPj4c1EQua8Q+MViT0/w==
   /escape-html/1.0.3:
     dev: true
     resolution:
@@ -4947,16 +4943,14 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-aZwGpamFO61g3OlfT7OQCHqhGnW43ieH9WZeP7QxN/G/jS4jfqUkZxoryvJgVPEcrl5NL/ggHsSmLMHuH64Lhg==
-  /uppload/2.4.0:
+  /uppload/2.5.0:
     dependencies:
       cropperjs: 1.5.6
-      es6-promise: 4.2.8
       focus-trap: 5.1.0
       mitt: 1.2.0
-      whatwg-fetch: 3.0.0
     dev: false
     resolution:
-      integrity: sha512-AHztwY/afQvdCtW+R6dtk6VuteGSIieJ7Y5xzSyk3A0jJwXFaxQT7xWCTOx2b8ag7TSulTLLxBY1HC6SmhWkUg==
+      integrity: sha512-M2QiXOmXdQjY19i7KVsmGvutnvmQN60vcVZwUi6SwHUZEsGtxRX8w6g0h1MiN7nSQF6Phh5CeoIvSe/IO5oU/w==
   /urix/0.1.0:
     dev: true
     resolution:
@@ -5021,10 +5015,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-8LDc+RW8X/FSivrbLA4XtTLaL+g=
-  /whatwg-fetch/3.0.0:
-    dev: false
-    resolution:
-      integrity: sha512-9GSJUgz1D4MfyKU7KRqwOjXCXTqWdFNvEr7eUBYchQiVc744mqK/MzXPNR2WsPkmkOa4ywfg8C2n8h+13Bey1Q==
   /whet.extend/0.9.9:
     dev: true
     engines:
