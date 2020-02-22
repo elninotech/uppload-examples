@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "cssnano": "latest",
+    "marked": "^0.8.0",
     "parcel": "beta",
     "typescript": "latest"
   }

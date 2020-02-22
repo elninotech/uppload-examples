@@ -4,10 +4,12 @@ importers:
       uppload: 2.4.0
     devDependencies:
       cssnano: 4.1.10
+      marked: 0.8.0
       parcel: 1.10.0-beta.1
       typescript: 3.8.2
     specifiers:
       cssnano: latest
+      marked: ^0.8.0
       parcel: beta
       typescript: latest
       uppload: latest
@@ -2950,6 +2952,13 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-7Nyo8TFE5mDxtb1B8S80edmN+48=
+  /marked/0.8.0:
+    dev: true
+    engines:
+      node: '>= 8.16.2'
+    hasBin: true
+    resolution:
+      integrity: sha512-MyUe+T/Pw4TZufHkzAfDj6HarCBWia2y27/bhuYkTaiUnfDYFnCP3KUN+9oM7Wi6JA2rymtVYbQu3spE0GCmxQ==
   /math-expression-evaluator/1.2.22:
     dev: true
     resolution:
