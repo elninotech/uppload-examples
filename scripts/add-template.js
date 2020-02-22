@@ -14,6 +14,8 @@ try {
   templateHtml = templateHtml
     .toString()
     .replace("<!-- Contents -->", readmeHtml);
+  const readmeTitle = readmeMd.split("\n", 1)[0].replace("# ", "");
+  templateHtml = templateHtml.replace("<!-- Title -->", readmeTitle);
 } catch (error) {}
 
 const indexPath = join(".", "index.html");
