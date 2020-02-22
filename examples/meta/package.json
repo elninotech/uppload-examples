@@ -5,9 +5,12 @@
     "start": "parcel build index.html",
     "build": "parcel build index.html"
   },
-  "author": "",
+  "author": "El Niño (https://www.elnino.tech)",
   "license": "MIT",
   "devDependencies": {
     "parcel": "^1.12.4"
+  },
+  "dependencies": {
+    "uppload": "^2.4.0"
   }
 }
