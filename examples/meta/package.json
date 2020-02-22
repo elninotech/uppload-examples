@@ -1,0 +1,13 @@
+{
+  "name": "@uppload/example-meta",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel build index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^1.12.4"
+  }
+}
