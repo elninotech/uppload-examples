@@ -4,8 +4,10 @@ importers:
       uppload: 2.4.0
     devDependencies:
       parcel: 1.10.0-beta.1
+      typescript: 3.8.2
     specifiers:
       parcel: beta
+      typescript: ^3.8.2
       uppload: latest
 lockfileVersion: 5.1
 packages:
@@ -4855,6 +4857,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+  /typescript/3.8.2:
+    dev: true
+    engines:
+      node: '>=4.2.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-EgOVgL/4xfVrCMbhYKUQTdF37SQn4Iw73H5BgCrF1Abdun7Kwy/QZsE/ssAy0y4LxBbvua3PIbFsbRczWWnDdQ==
   /unicode-canonical-property-names-ecmascript/1.0.4:
     dev: true
     engines:

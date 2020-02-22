@@ -11,6 +11,7 @@
     "uppload": "latest"
   },
   "devDependencies": {
-    "parcel": "beta"
+    "parcel": "beta",
+    "typescript": "^3.8.2"
   }
 }
