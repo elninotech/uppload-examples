@@ -12,7 +12,6 @@
   },
   "devDependencies": {
     "cssnano": "latest",
-    "core-js": "latest",
     "parcel": "beta",
     "typescript": "latest"
   }
