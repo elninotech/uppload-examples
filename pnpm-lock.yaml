@@ -3,11 +3,15 @@ importers:
     dependencies:
       uppload: 2.4.0
     devDependencies:
+      core-js: 3.6.4
+      cssnano: 4.1.10
       parcel: 1.10.0-beta.1
       typescript: 3.8.2
     specifiers:
+      core-js: latest
+      cssnano: latest
       parcel: beta
-      typescript: ^3.8.2
+      typescript: latest
       uppload: latest
 lockfileVersion: 5.1
 packages:
@@ -1525,6 +1529,11 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
+  /core-js/3.6.4:
+    dev: true
+    requiresBuild: true
+    resolution:
+      integrity: sha512-4paDGScNgZP2IXXilaffL9X7968RuvwlkK3xWtZRVqgd8SYNiVKRJvkFd1aqqEuPfN7E68ZHEp9hDj6lHj4Hyw==
   /core-util-is/1.0.2:
     dev: true
     resolution:

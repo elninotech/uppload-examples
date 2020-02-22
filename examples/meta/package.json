@@ -11,7 +11,9 @@
     "uppload": "latest"
   },
   "devDependencies": {
+    "cssnano": "latest",
+    "core-js": "latest",
     "parcel": "beta",
-    "typescript": "^3.8.2"
+    "typescript": "latest"
   }
 }
