@@ -7,10 +7,10 @@
   },
   "author": "El Niño (https://www.elnino.tech)",
   "license": "MIT",
-  "devDependencies": {
-    "parcel": "^1.12.4"
-  },
   "dependencies": {
-    "uppload": "^2.4.0"
+    "uppload": "latest"
+  },
+  "devDependencies": {
+    "parcel": "beta"
   }
 }
