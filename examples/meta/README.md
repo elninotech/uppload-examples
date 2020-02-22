@@ -1,6 +1,6 @@
 # Meta Example
 
-This is a usage example for [Uppload](https://github.com/elninotech/uppload), the open-source file uploading widget.
+This is a usage example for [Uppload](https://github.com/elninotech/uppload), the open-source file uploading widget. This meta example can be used as a base directory to add a new example.
 
 ## 🛠 Development
 
