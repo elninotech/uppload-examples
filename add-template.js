@@ -13,11 +13,6 @@ let templateHtml = `<!DOCTYPE html>
       integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://unpkg.com/uppload/dist/uppload.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/uppload/dist/themes/light.css"
-    />
     <style>
       a {
         color: #0078e7;
