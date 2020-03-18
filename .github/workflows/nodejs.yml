@@ -12,9 +12,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: examples/meta
+      - name: examples/local-preview
         run: |
-          cd examples/meta
+          cd examples/local-preview
           npm install
           npm run build
           cd ../../
