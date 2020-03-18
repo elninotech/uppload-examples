@@ -4,7 +4,7 @@
   "scripts": {
     "start": "npm run generate-html && parcel index.html",
     "build": "npm run generate-html && parcel build index.html",
-    "generate-html": "run-url https://raw.githubusercontent.com/elninotech/uppload-examples/master/scripts/add-template.js"
+    "generate-html": "node add-template.js"
   },
   "author": "El Niño (https://www.elnino.tech)",
   "license": "MIT",
@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "cssnano": "latest",
+    "marked": "^0.8.0",
     "parcel": "beta",
     "run-url": "latest",
     "typescript": "latest"
