@@ -15,6 +15,6 @@ jobs:
       - name: examples/meta
         run: |
           cd examples/meta
-          npm ci
+          npm install
           npm run build
           cd ../../
