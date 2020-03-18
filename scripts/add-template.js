@@ -19,7 +19,7 @@ try {
     .replace(
       "<!-- Contents -->",
       readmeHtml +
-        `<p><strong><a href="https://github.com/elninotech/uppload-examples/tree/master/examples/${exampleName}">View the source code</a></strong> of this example or <a href="https://codesandbox.io/s/github/elninotech/uppload-examples/tree/master/examples/${exampleName}">Try it on CodeSandbox</a></p>`
+        `<p>You can <strong><a href="https://github.com/elninotech/uppload-examples/tree/master/examples/${exampleName}">view the source code</a></strong> of this example or <a href="https://codesandbox.io/s/github/elninotech/uppload-examples/tree/master/examples/${exampleName}">try it on CodeSandbox</a></p>`
     );
   const readmeTitle = readmeMd.split("\n", 1)[0].replace("# ", "");
   templateHtml = templateHtml.replace("<!-- Title -->", readmeTitle);
