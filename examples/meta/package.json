@@ -13,9 +13,8 @@
   },
   "devDependencies": {
     "cssnano": "latest",
-    "marked": "latest",
     "parcel": "beta",
-    "run-url": "^1.0.2",
+    "run-url": "latest",
     "typescript": "latest"
   }
 }
