@@ -9,6 +9,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "node add-template.js && git add ."
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/elninotech/uppload-examples.git"
@@ -21,6 +26,7 @@
   },
   "homepage": "https://github.com/elninotech/uppload-examples#readme",
   "devDependencies": {
+    "husky": "^4.2.3",
     "marked": "^0.8.0",
     "prettier": "^1.19.1"
   }

@@ -52,9 +52,9 @@ let templateHtml = `<!DOCTYPE html>
   </body>
 </html>`;
 
-const examples = readdirSync(join(__dirname, "..", "examples"));
+const examples = readdirSync(join(__dirname, "examples"));
 examples.forEach(example => {
-  const readmePath = join(__dirname, "..", "examples", example, "README.md");
+  const readmePath = join(__dirname, "examples", example, "README.md");
   try {
     const readmeMd = readFileSync(readmePath, { encoding: "utf8" });
     const readmeHtml = marked(readmeMd.toString())
@@ -76,7 +76,7 @@ examples.forEach(example => {
     console.log(error);
   }
 
-  const indexPath = join(__dirname, "..", "examples", example, "index.html");
+  const indexPath = join(__dirname, "examples", example, "index.html");
   writeFileSync(indexPath, format(templateHtml, { parser: "html" }));
 
   console.log(`Written examples/${example}/index.html`);
