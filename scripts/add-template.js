@@ -1,4 +1,4 @@
-const { readFileSync, writeFileSync } = require("fs");
+const { readFileSync, writeFileSync, readdirSync } = require("fs");
 const { join, resolve } = require("path");
 const marked = require("marked");
 
@@ -50,6 +50,11 @@ let templateHtml = `<!DOCTYPE html>
     <script src="index.ts"></script>
   </body>
 </html>`;
+
+const examples = readdirSync(join(__dirname, "..", "examples"));
+console.log(examples);
+
+process.exit();
 
 const readmePath = join(".", "README.md");
 try {

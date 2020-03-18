@@ -1,0 +1,26 @@
+{
+  "name": "uppload-examples",
+  "version": "1.0.0",
+  "description": "This monorepo contains example projects using Uppload to help you get started quickly. All demos are available on [CodeSandbox](https://uppload.js.org/examples).",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elninotech/uppload-examples.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elninotech/uppload-examples/issues"
+  },
+  "homepage": "https://github.com/elninotech/uppload-examples#readme",
+  "devDependencies": {
+    "marked": "^0.8.0"
+  }
+}
