@@ -5,6 +5,8 @@ import "uppload/dist/themes/light.css";
 const uploader = new Uppload({
   lang: en,
   call: ".pure-button-primary",
+  bind: ".uppload-image",
+  value: "https://via.placeholder.com/150x150",
   uploader: (file, updateProgress) =>
     new Promise(resolve => {
       console.log("Uploading file...", file);

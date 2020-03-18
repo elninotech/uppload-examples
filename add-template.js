@@ -17,6 +17,10 @@ let templateHtml = `<!DOCTYPE html>
       a {
         color: #0078e7;
       }
+      .uppload-image {
+        display: block;
+        margin-bottom: 1rem;
+      }
     </style>
   </head>
   <body>
@@ -26,6 +30,7 @@ let templateHtml = `<!DOCTYPE html>
       <main>
         <!-- Contents -->
         <p style="opacity: 0.5">Click on the button below to try this demo.</p>
+        <img alt="" class="uppload-image" />
         <button class="pure-button pure-button-primary">
           Upload
         </button>
