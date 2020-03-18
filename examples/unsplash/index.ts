@@ -1,4 +1,4 @@
-import { Uppload, en, Local, Crop } from "uppload";
+import { Uppload, en, Unsplash, Crop, Pixabay, Pexels } from "uppload";
 import "uppload/dist/uppload.css";
 import "uppload/dist/themes/light.css";
 
@@ -20,10 +20,16 @@ const uploader = new Uppload({
 });
 
 // Services
-uploader.use([new Local()]);
+uploader.use([
+  new Unsplash(
+    "3135681ed1e271e3d3d167e184aecfb0ad74d2043f6f378bf19a23a6647954d8"
+  ),
+  new Pixabay("14234762-6301dcca06f491e77f115de8e"),
+  new Pexels("563492ad6f9170000100000172ccefc96f674d01869ba24acc62a573")
+]);
 
 // Effects
-uploader.use([new Crop({ aspectRatio: 1 })]);
+uploader.use([new Crop()]);
 
 // Logging
 console.log(uploader);
