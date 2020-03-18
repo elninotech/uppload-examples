@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/elninotech/uppload-examples#readme",
   "devDependencies": {
-    "marked": "^0.8.0"
+    "marked": "^0.8.0",
+    "prettier": "^1.19.1"
   }
 }

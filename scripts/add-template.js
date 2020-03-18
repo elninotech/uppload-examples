@@ -1,5 +1,6 @@
 const { readFileSync, writeFileSync, readdirSync } = require("fs");
 const { join, resolve } = require("path");
+const { format } = require("prettier");
 const marked = require("marked");
 
 let templateHtml = `<!DOCTYPE html>
@@ -52,33 +53,31 @@ let templateHtml = `<!DOCTYPE html>
 </html>`;
 
 const examples = readdirSync(join(__dirname, "..", "examples"));
-console.log(examples);
+examples.forEach(example => {
+  const readmePath = join(__dirname, "..", "examples", example, "README.md");
+  try {
+    const readmeMd = readFileSync(readmePath, { encoding: "utf8" });
+    const readmeHtml = marked(readmeMd.toString())
+      .split("\n", 2)
+      .join("\n");
+    const exampleName = resolve(".")
+      .split("/")
+      .pop();
+    templateHtml = templateHtml
+      .toString()
+      .replace(
+        "<!-- Contents -->",
+        readmeHtml +
+          `<p>You can <strong><a href="https://github.com/elninotech/uppload-examples/tree/master/examples/${exampleName}">view the source code</a></strong> of this example or <a href="https://codesandbox.io/s/github/elninotech/uppload-examples/tree/master/examples/${exampleName}">try it on CodeSandbox</a></p>`
+      );
+    const readmeTitle = readmeMd.split("\n", 1)[0].replace("# ", "");
+    templateHtml = templateHtml.replace("<!-- Title -->", readmeTitle);
+  } catch (error) {
+    console.log(error);
+  }
 
-process.exit();
+  const indexPath = join(__dirname, "..", "examples", example, "index.html");
+  writeFileSync(indexPath, format(templateHtml, { parser: "html" }));
 
-const readmePath = join(".", "README.md");
-try {
-  const readmeMd = readFileSync(readmePath, { encoding: "utf8" });
-  const readmeHtml = marked(readmeMd.toString())
-    .split("\n", 2)
-    .join("\n");
-  const exampleName = resolve(".")
-    .split("/")
-    .pop();
-  templateHtml = templateHtml
-    .toString()
-    .replace(
-      "<!-- Contents -->",
-      readmeHtml +
-        `<p>You can <strong><a href="https://github.com/elninotech/uppload-examples/tree/master/examples/${exampleName}">view the source code</a></strong> of this example or <a href="https://codesandbox.io/s/github/elninotech/uppload-examples/tree/master/examples/${exampleName}">try it on CodeSandbox</a></p>`
-    );
-  const readmeTitle = readmeMd.split("\n", 1)[0].replace("# ", "");
-  templateHtml = templateHtml.replace("<!-- Title -->", readmeTitle);
-} catch (error) {
-  console.log(error);
-}
-
-const indexPath = join(".", "index.html");
-writeFileSync(indexPath, templateHtml);
-
-console.log("Written index.html");
+  console.log(`Written examples/${example}/index.html`);
+});
