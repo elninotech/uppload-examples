@@ -2,7 +2,7 @@ const { readFileSync, writeFileSync } = require("fs");
 const { join, resolve } = require("path");
 const marked = require("marked");
 
-const templateHtml = `<!DOCTYPE html>
+let templateHtml = `<!DOCTYPE html>
 <html>
   <head>
     <title><!-- Title --> &middot; Uppload</title>
@@ -69,7 +69,9 @@ try {
     );
   const readmeTitle = readmeMd.split("\n", 1)[0].replace("# ", "");
   templateHtml = templateHtml.replace("<!-- Title -->", readmeTitle);
-} catch (error) {}
+} catch (error) {
+  console.log(error);
+}
 
 const indexPath = join(".", "index.html");
 writeFileSync(indexPath, templateHtml);
