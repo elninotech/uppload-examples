@@ -1,6 +1,6 @@
 import { Uppload, en, Local, Preview } from "uppload";
 import "uppload/dist/uppload.css";
-import "uppload/dist/themes/light.css";
+import "uppload/dist/themes/dark.css";
 
 const uploader = new Uppload({
   lang: en,

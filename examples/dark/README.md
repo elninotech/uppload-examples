@@ -1,6 +1,6 @@
-# Inline Uppload Widget
+# Dark theme
 
-This Uppload example uses an inline widget instead of a modal.
+This Uppload example uses a dark theme instead of a light theme.
 
 ## 🛠 Development
 
@@ -20,7 +20,7 @@ npm run build
 
 ## 🐛 Issues
 
-If you want to report a problem or suggestion with Inline Uppload Widget, please open an issue in the main [elninotech/uppload](https://github.com/elninotech/uppload) repo and add the label "examples".
+If you want to report a problem or suggestion with Dark theme, please open an issue in the main [elninotech/uppload](https://github.com/elninotech/uppload) repo and add the label "examples".
 
 ## 📄 License
 
