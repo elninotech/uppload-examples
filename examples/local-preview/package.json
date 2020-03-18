@@ -2,9 +2,8 @@
   "name": "@uppload/example-meta",
   "version": "1.0.0",
   "scripts": {
-    "start": "npm run generate-html && parcel index.html",
-    "build": "npm run generate-html && parcel build index.html",
-    "generate-html": "node add-template.js"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "El Niño (https://www.elnino.tech)",
   "license": "MIT",
