@@ -12,9 +12,45 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+      - name: examples/dark
+        run: |
+          cd examples/dark
+          npm install
+          npm run build
+          cd ../../
+      - name: examples/editor
+        run: |
+          cd examples/editor
+          npm install
+          npm run build
+          cd ../../
+      - name: examples/firebase
+        run: |
+          cd examples/firebase
+          npm install
+          npm run build
+          cd ../../
+      - name: examples/inline
+        run: |
+          cd examples/inline
+          npm install
+          npm run build
+          cd ../../
       - name: examples/local-preview
         run: |
           cd examples/local-preview
+          npm install
+          npm run build
+          cd ../../
+      - name: examples/square
+        run: |
+          cd examples/square
+          npm install
+          npm run build
+          cd ../../
+      - name: examples/unsplash
+        run: |
+          cd examples/unsplash
           npm install
           npm run build
           cd ../../
