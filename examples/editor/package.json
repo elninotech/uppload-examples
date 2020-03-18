@@ -1,0 +1,20 @@
+{
+  "name": "@uppload/example-meta",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "El Niño (https://www.elnino.tech)",
+  "license": "MIT",
+  "dependencies": {
+    "uppload": "latest"
+  },
+  "devDependencies": {
+    "cssnano": "latest",
+    "marked": "^0.8.0",
+    "parcel": "beta",
+    "run-url": "latest",
+    "typescript": "latest"
+  }
+}
