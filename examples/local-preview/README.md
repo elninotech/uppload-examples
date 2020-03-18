@@ -1,6 +1,6 @@
 # Local File Selector with Image Preview
 
-This is a usage example for [Uppload](https://github.com/elninotech/uppload), the open-source file uploading widget. This example lets users select files from their device and preview images before uploading them.
+This Uppload example lets users select files from their device and preview images before uploading them.
 
 ## 🛠 Development
 
@@ -20,7 +20,7 @@ npm run build
 
 ## 🐛 Issues
 
-If you want to report a problem or suggestion with the Local File Selector with Image Preview, please open an issue in the main [elninotech/uppload](https://github.com/elninotech/uppload) repo and add the labels "examples" and "example-meta".
+If you want to report a problem or suggestion with Local File Selector with Image Preview, please open an issue in the main [elninotech/uppload](https://github.com/elninotech/uppload) repo and add the label "examples".
 
 ## 📄 License
 
