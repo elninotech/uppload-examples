@@ -28,6 +28,6 @@
   "devDependencies": {
     "husky": "^4.2.5",
     "marked": "^1.0.0",
-    "prettier": "^2.0.4"
+    "prettier": "^2.0.5"
   }
 }
