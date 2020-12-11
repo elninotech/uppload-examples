@@ -27,7 +27,7 @@
   "homepage": "https://github.com/elninotech/uppload-examples#readme",
   "devDependencies": {
     "husky": "^4.3.5",
-    "marked": "^1.2.5",
+    "marked": "^1.2.6",
     "prettier": "^2.2.1"
   }
 }
